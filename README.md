@@ -1,1 +1,1 @@
-# pSparseCNN
+# pSparseDenoisingCNN
