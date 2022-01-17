@@ -20,11 +20,11 @@ function [sigma_w, SNR_y, SNR_x_mmse,...
 
 %% Set parameters
 
-Nr = 5000;     % Number of realizations
+Nr = 500;     % Number of realizations
 
 min_sigma_w = 0.1;  % min noise std range
 max_sigma_w = 2.0;  % max noise std range
-num_sigmas_w = 40;  % number of noise std points in the range
+num_sigmas_w = 20;  % number of noise std points in the range
 
 %% Initialization
 
