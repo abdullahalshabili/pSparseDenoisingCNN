@@ -70,4 +70,4 @@ subplot(2, 1, 2)
 stem(x_hat, 'b.')
 title(sprintf('Denoised Signal. RSME = %.3f; SNR = %.2f dB',...
         myrmse(x, x_hat), SNR(x_hat, x)))
-print -dpdf figures/Denoising
+% print -dpdf figures/Denoising
