@@ -52,17 +52,17 @@ fun_CNN2 = @(y) Run_CNN(CNN2, y);
 
 % plotting
 figure(3)
-semilogx(sigma_w_, SNR_y, 'k--');
-hold on;
 semilogx(sigma_w_, SNR_x_mmse, 'r.-');
-semilogx(sigma_w_, SNR_xCNN1, 'b.-');
+hold on;
 semilogx(sigma_w_, SNR_xCNN2, 'm.-');
+semilogx(sigma_w_, SNR_xCNN1, 'b.-');
+semilogx(sigma_w_, SNR_y, 'k--');
 fill([0.5, 0.5, 1.5, 1.5], [0, 40, 40, 0], 'blue', 'FaceAlpha', 0.1, 'LineStyle','none');
 hold off;
-legend('Noisy', 'MMSE', 'CNN', 'CCNN');
+legend('MMSE', 'CCNN', 'CNN', 'Noisy');
 xlabel('\sigma_w')
 ylabel('SNR')
 set(gca, 'xtick', [0.1 0.2 0.5 1 1.5 2.0 4])
 xlim([min(sigma_w_) max(sigma_w_)])
 
-print -dpdf -bestfit figures/SNR_plot_CNN
+% print -dpdf -bestfit figures/SNR_plot_CNN

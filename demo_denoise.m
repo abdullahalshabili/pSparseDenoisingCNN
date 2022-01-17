@@ -58,7 +58,8 @@ title('Clean signal')
 subplot(2, 1, 2)
 stem(y, 'b.')
 title(sprintf('Noisy signal. RSME = %.3f; SNR = %.3f dB', myrmse(x, y), SNR(y, x)))
-print -dpdf figures/Noisy
+
+% print -dpdf figures/Noisy
 
 figure(3)
 clf
