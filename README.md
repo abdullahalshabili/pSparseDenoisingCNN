@@ -5,6 +5,7 @@ Convolutional neural networks (CNNs) provide impressive empirical success in var
 
 ## Citation
 
+```
 @article{al2022positive,
   title={Positive sparse signal denoising: What does a CNN learn?},
   author={Al-Shabili, Abdullah H and Selesnick, Ivan},
@@ -14,3 +15,4 @@ Convolutional neural networks (CNNs) provide impressive empirical success in var
   year={2022},
   publisher={IEEE}
 }
+```
